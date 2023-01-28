@@ -10,6 +10,8 @@
  - запускаем сервер разрабоки ```npm run watch```
 
 #### 3. Запуск в [docker](https://www.docker.com/)
+Собираем приложение ```npm run build```
+
 Создаем контейнер
 ```
 docker build . -t nginx --progress=plain
