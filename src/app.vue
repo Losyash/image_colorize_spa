@@ -57,7 +57,7 @@
       </div>
     </div>
 
-    <div v-if="inputImage || outputImage"
+    <div v-if="inputImage && outputImage"
       class="card p-4"
     >
       <div class="row d-flex justify-content-center">
