@@ -24,6 +24,13 @@
         class="row d--flex justify-content-end pb-4"
       >
         <div  class="col-auto">
+          <button class="u-button u-green"
+            @click="clear"
+          >Очистить форму
+          </button>
+        </div>
+
+        <div  class="col-auto">
           <button class="u-button u-blue"
             @click="upload"
           >Раскрасить изображение
@@ -101,6 +108,11 @@
     const filedata = btoa(utils.arrayToString(uintdata))
 
     inputImage.value = `data:image/jpeg;base64,${filedata}`
+  };
+
+  const clear = () => {
+    inputImage.value = null;
+    outputImage.value = null;
   };
 
   const upload = async () => {
