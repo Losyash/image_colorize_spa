@@ -8,12 +8,12 @@
   font-weight: 400;
   margin: 0;
   padding: 0;
-  transition: all .25s ease-in-out;
+  /* transition: all .25s ease-in-out; */
 }
 
-*:before, *:after {
+/* *:before, *:after {
   transition: all .25s ease-in-out;
-}
+} */
 
 *,
 *::before,
@@ -136,6 +136,21 @@ html, body {
   outline: none;
 }
 
+.u-button {
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;  
+}
+
+.u-button.u-green {
+  background-color: #05725a;
+}
+
+.u-button.u-blue {
+  background-color: #1E4391;
+}
+
 .page-caption {
   color: #1E4391;
   font-family: "Roboto Medium", sans-serif;
@@ -146,4 +161,8 @@ html, body {
   color: #1E4391;
   font-family: "Roboto Medium", sans-serif;
   font-size: 16px;;
+}
+
+.response-image {
+  width: 100%;
 }
