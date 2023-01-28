@@ -3,7 +3,7 @@
     @drop.stop.prevent="drop"
     @dropover.stop.prevent="dropover"
   >
-    <span class="upload-text">Нажмите для выбора файла(ов)</span>
+    <span class="upload-text">Перетащите сюда файл или нажмите для выбора файла(ов)</span>
 
     <input :accept="accept"
       :multiple="multiple"
